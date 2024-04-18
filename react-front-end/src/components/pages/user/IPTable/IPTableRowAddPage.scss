@@ -1,0 +1,39 @@
+.ip-add-modal {
+  --chakra-colors-chakra-placeholder-color: rgba(0, 0, 0, 0.3);
+  .ip-add-input {
+    padding: 1.2em;
+    padding-left: 0.7em;
+    margin: 0.3em 0;
+    font-size: 1.35em;
+    border-radius: 0;
+    color: black;
+    border: 3px solid rgba(0, 0, 0, 0.23);
+  }
+
+  .ip-add-checkbox {
+    margin-bottom: 1em;
+    span {
+      padding: 12px;
+    }
+  }
+
+  .ip-add-submit-btn {
+    $text: white;
+    $background: #03a113;
+
+    font-size: 1.2em;
+    padding: 1.3em;
+    color: $text;
+    background-color: $background;
+    border: 2px transparent solid;
+    &:hover {
+     color: $background;
+     background-color: $text;
+     border: 2px $background solid;
+    }
+  }
+
+  .ip-add-form-label {
+    font-size: 1.2em;
+  }
+}

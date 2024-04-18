@@ -1,0 +1,25 @@
+@import "../../global-styles.scss";
+.filter-funnel {
+  display: flex;
+  overflow: visible;
+  align-items: center;
+  margin-right: 1em;
+
+  .filter-funnel-icon {
+    filter: contrast(10%);
+  }
+}
+
+.column-filter-key {
+  padding: 1em 15px; 
+  border-top: 2px solid rgba(0, 0, 0, 0.06);
+  transition-duration: 100ms;
+  span {
+    background-color: transparent !important;
+  }
+  &:hover {
+    transition-duration: 100ms;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-top: 2px solid $CommerceGreen2;
+  }
+}

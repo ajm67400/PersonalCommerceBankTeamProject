@@ -1,0 +1,43 @@
+.home-page-cards {
+	display: flex;
+	flex-direction: row;
+	margin: 2em 3em;
+}
+.home-page-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 300px;
+	margin: 0 2em;
+	height: 140px;
+	.title-area {
+		width: 100%;
+		padding: 1em;
+		background-color: #d7d7d7;
+		h1, h2, h3 {
+			font-size: 28px;
+			font-weight: bold;
+		}
+	}
+	.content-area {
+		$ButtonColor: #7b7b7b;
+		$BgColor: #f2f2f2;
+
+		padding: 1em;
+		width: 100%;
+		background-color: $BgColor;
+		box-sizing: border-box;
+		.card-action-btn {
+			width: 100%;
+			border: 1px transparent solid;
+			color: white;
+			background-color: $ButtonColor;
+			font-size: 18px;
+			&:hover {
+				border: 1px $ButtonColor solid; 
+				color: $ButtonColor;
+				background-color: $BgColor;
+			}
+		}
+	}
+}
